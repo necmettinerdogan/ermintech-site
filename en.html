@@ -6,9 +6,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Erdogan Mining Technologies</title>
+  <title>Erdoğan Mining Technologies</title>
 
   <style>
+
     * {
       margin: 0;
       padding: 0;
@@ -28,8 +29,8 @@
 
     header {
       background:
-        linear-gradient(rgba(5, 15, 25, 0.10),
-                        rgba(5, 15, 25, 0.10)),
+        linear-gradient(rgba(5,15,25,0.10),
+                        rgba(5,15,25,0.10)),
         url("images/header1.jpg");
 
       background-size: cover;
@@ -64,15 +65,13 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 50px;
-
       background: #0f2d3f;
       padding: 15px 20px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
     }
 
     nav a {
@@ -80,6 +79,7 @@
       text-decoration: none;
       font-size: 15px;
       font-weight: bold;
+      transition: 0.3s;
     }
 
     nav a:hover {
@@ -94,6 +94,18 @@
       font-size: 34px;
       color: #0f2d3f;
       margin-bottom: 35px;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      width: 75px;
+      height: 4px;
+      background: #1f5a7a;
+      position: absolute;
+      left: 0;
+      bottom: -12px;
+      border-radius: 10px;
     }
 
     .grid {
@@ -106,11 +118,60 @@
       background: white;
       border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+      transition: 0.35s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
+    }
+
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
     }
 
     .card-content {
       padding: 28px;
+    }
+
+    .card h3 {
+      color: #0f2d3f;
+      margin-bottom: 18px;
+      font-size: 22px;
+    }
+
+    .service-list {
+      list-style: none;
+    }
+
+    .service-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #e5edf3;
+    }
+
+    .contact-box {
+      background: white;
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      background: #1f5a7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #14425b;
     }
 
     .whatsapp {
@@ -127,42 +188,204 @@
       align-items: center;
       font-size: 28px;
       text-decoration: none;
+      z-index: 999;
     }
 
     footer {
       background: #0f2d3f;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 15px 20px;
+      margin-top: 40px;
+      font-size: 14px;
     }
+
+    @media (max-width: 768px) {
+
+      header {
+        padding: 90px 20px;
+      }
+
+      header h1 {
+        font-size: 34px;
+      }
+
+      header p {
+        font-size: 16px;
+      }
+
+      section {
+        padding: 60px 20px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      nav a {
+        font-size: 14px;
+      }
+    }
+
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <img src="images/ermintech_logo1.png" class="logo" alt="logo">
+<header>
 
-    <h1>Erdogan Mining Technologies</h1>
+  <img src="images/ermintech_logo1.png" class="logo" alt="logo">
 
-    <p>
-      Mining Engineering • Ore Beneficiation • Thermal Processes • Equipment and Ore Trade
-    </p>
+  <h1>Erdoğan Mining Technologies</h1>
 
-    <a href="#iletisim" class="btn">Contact Us</a>
-  </header>
+  <p>
+    Mining Engineering • Mineral Processing • Thermal Systems • Equipment & Mineral Trading
+  </p>
 
-  <!-- MENU -->
-  <nav>
-    <a href="#hakkimizda">About Us</a>
-    <a href="#mühendislik">Engineering</a>
-    <a href="#projeler">Projects</a>
-    <a href="#ticaret">Equipment and Ore Trade</a>
-    <a href="#iletisim">Contact</a>
-  </nav>
+  <a href="#contact" class="btn">Contact Us</a>
 
-  <!-- BURADAN SONRASI DEĞİŞMEDİ (ORİJİNAL İÇERİK AYNI KALDI) -->
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#engineering">Engineering</a>
+  <a href="#projects">Projects</a>
+  <a href="#trade">Equipment & Minerals</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Us</h2>
+
+  <div class="card">
+    <div class="card-content">
+
+      <p>
+        Erdoğan Mining Technologies provides engineering, project development, and technical consulting services in mining, mineral processing, and industrial mineral technologies.
+      </p>
+
+      <br>
+
+      <p>
+        Our expertise includes crushing, grinding, classification, drying, microwave-assisted processing, and mineral beneficiation systems.
+      </p>
+
+      <br>
+
+      <p>
+        We also supply industrial equipment and consumables for the mining sector.
+      </p>
+
+    </div>
+  </div>
+
+</section>
+
+<section id="engineering">
+  <h2>Engineering Services</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Mining Operations</h3>
+        <ul class="service-list">
+          <li>Exploration and feasibility studies</li>
+          <li>Open-pit and underground mine design</li>
+          <li>Operational reporting</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Mineral Processing</h3>
+        <ul class="service-list">
+          <li>Process plant design</li>
+          <li>Efficiency optimization</li>
+          <li>Tailings and recovery studies</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h3>Thermal Processes</h3>
+        <ul class="service-list">
+          <li>Drying of industrial minerals</li>
+          <li>Microwave-assisted processing</li>
+          <li>Calcination and roasting systems</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-content">
+        <p><strong>Computer-based mine project management system</strong></p>
+        <img src="images/nj_prj_yonetimi1.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <p><strong>Open-pit coal mine planning project (Elbistan)</strong></p>
+        <img src="images/elb_aki_pln1.png">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="trade">
+  <h2>Equipment & Mineral Trading</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="card-content">
+        <p><strong>Forged Steel Grinding Balls</strong></p>
+        <p>Used in gold, copper, zinc, chromite, feldspar, quartz, iron and cement industries.</p>
+        <img src="images/hd_dco_bilya1.png">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <p><strong>Microwave Tunnel Drying Systems</strong></p>
+        <p>For drying minerals, clays, aggregates and industrial materials.</p>
+        <img src="images/dki_mw_kurutucu1.jpg">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+
+  <div class="contact-box">
+    <p><strong>Company:</strong> Erdoğan Mining Technologies</p>
+    <p><strong>Website:</strong> www.ermintech.com</p>
+    <p><strong>Email:</strong> info@ermintech.com</p>
+    <p><strong>WhatsApp:</strong> +90 533 317 29 44</p>
+    <p><strong>Location:</strong> İzmir, Türkiye</p>
+  </div>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/905333172944">☎</a>
+
+<footer>
+  © 2026 Erdoğan Mining Technologies
+</footer>
 
 </body>
 </html>
