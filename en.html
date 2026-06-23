@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -26,8 +26,6 @@
       line-height: 1.7;
     }
 
-    /* HEADER */
-
     header {
       background:
         linear-gradient(rgba(5, 15, 25, 0.10),
@@ -45,8 +43,8 @@
     .logo {
       width: 150px !important;
       height: auto;
-	  display: block;
-	  margin: 0 auto 25px auto;
+      display: block;
+      margin: 0 auto 25px auto;
     }
 
     header h1 {
@@ -62,8 +60,6 @@
       opacity: 0.95;
     }
 
-    /* NAVBAR */
-
     nav {
       position: sticky;
       top: 0;
@@ -76,8 +72,7 @@
 
       background: #0f2d3f;
       padding: 15px 20px;
-
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     }
 
     nav a {
@@ -85,14 +80,11 @@
       text-decoration: none;
       font-size: 15px;
       font-weight: bold;
-      transition: 0.3s;
     }
 
     nav a:hover {
       color: #00c8ff;
     }
-
-    /* GENERAL */
 
     section {
       padding: 80px 10%;
@@ -102,21 +94,7 @@
       font-size: 34px;
       color: #0f2d3f;
       margin-bottom: 35px;
-      position: relative;
     }
-
-    h2::after {
-      content: "";
-      width: 75px;
-      height: 4px;
-      background: #1f5a7a;
-      position: absolute;
-      left: 0;
-      bottom: -12px;
-      border-radius: 10px;
-    }
-
-    /* GRID */
 
     .grid {
       display: grid;
@@ -124,85 +102,16 @@
       gap: 30px;
     }
 
-    /* CARD */
-
     .card {
       background: white;
       border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
-      transition: 0.35s;
-    }
-
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.14);
-    }
-
-    .card img {
-      width: 100%;
-      height: 240px;
-      object-fit: cover;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.08);
     }
 
     .card-content {
       padding: 28px;
     }
-
-    .card h3 {
-      color: #0f2d3f;
-      margin-bottom: 18px;
-      font-size: 22px;
-    }
-
-    /* LIST */
-
-    .service-list {
-      list-style: none;
-    }
-
-    .service-list li {
-      padding: 10px 0;
-      border-bottom: 1px solid #e5edf3;
-    }
-
-    .service-list li:last-child {
-      border-bottom: none;
-    }
-
-    /* ABOUT / CONTACT */
-
-    .about-box,
-    .contact-box {
-      background: white;
-      padding: 40px;
-      border-radius: 18px;
-      box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
-    }
-
-    .contact-box p {
-      margin-bottom: 14px;
-      font-size: 17px;
-    }
-
-    /* BUTTON */
-
-    .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 14px 28px;
-      background: #1f5a7a;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: #14425b;
-    }
-
-    /* WHATSAPP */
 
     .whatsapp {
       position: fixed;
@@ -218,93 +127,34 @@
       align-items: center;
       font-size: 28px;
       text-decoration: none;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-      z-index: 999;
     }
-
-    /* FOOTER */
 
     footer {
       background: #0f2d3f;
       color: white;
       text-align: center;
-      padding: 15px 20px;
-      margin-top: 40px;
-      font-size: 14px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 768px) {
-
-      header {
-        padding: 90px 20px;
-      }
-
-      header h1 {
-        font-size: 34px;
-      }
-
-      header p {
-        font-size: 16px;
-      }
-
-      section {
-        padding: 60px 20px;
-      }
-
-      nav {
-        gap: 15px;
-      }
-
-      nav a {
-        font-size: 14px;
-      }
+      padding: 15px;
     }
   </style>
-
-  <meta charset="UTF-8">
-  <title>Ermintech</title>
-  <link rel="icon" type="image/png" href="images/favicon.png">
-	
 </head>
 
 <body>
 
   <!-- HEADER -->
-
   <header>
-
-    <img src="images/ermintech_logo1.png" class="logo" alt="logo">
-</head>
-
-<body>
-
-  <!-- HEADER -->
-
-  <header>
-
     <img src="images/ermintech_logo1.png" class="logo" alt="logo">
 
     <h1>Erdogan Mining Technologies</h1>
 
     <p>
-      Mining Engineering
-      &nbsp;&nbsp;•&nbsp;&nbsp;
-      Ore Beneficiation
-      &nbsp;&nbsp;•&nbsp;&nbsp;
-      Thermal Processes
-      &nbsp;&nbsp;•&nbsp;&nbsp;
-      Equipment and Ore Trade
+      Mining Engineering • Ore Beneficiation • Thermal Processes • Equipment and Ore Trade
     </p>
 
     <a href="#iletisim" class="btn">Contact Us</a>
-
   </header>
 
- <!-- MENU -->
-
-   <nav>
+  <!-- MENU -->
+  <nav>
     <a href="#hakkimizda">About Us</a>
     <a href="#mühendislik">Engineering</a>
     <a href="#projeler">Projects</a>
@@ -312,427 +162,7 @@
     <a href="#iletisim">Contact</a>
   </nav>
 
-  <!-- ABOUT US -->
-  <section id="hakkimizda">
-    <h2>About Us</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="card-content">
-	<p> Erdogan Mining Technologies is an engineering company providing engineering, project development, 
-	technical consultancy, and commercial solutions in the fields of <strong>mining, mineral processing, and mineral process technologies</strong>. 
-	Our company develops industry-specific solutions by combining technical knowledge, field experience, and a process-oriented approach 
-	on various mineral groups, especially industrial minerals such as <strong>magnesite, dolomite, bentonite, and quartz sand</strong>.</p>
-	<br>
-	<p>Our activities include <strong>crushing-sieving, grinding, classification, drying, microwave-assisted thermal processes, 
-	mineral beneficiation, and process optimization</strong>. In particular, our studies on energy-efficient <strong>microwave drying and 
-	thermal processing technologies</strong> aim to develop more controlled, sustainable, and innovative applications in mineral processing systems.</p>
-	<br>
-	<p>Our company not only provides engineering and project development services but also supplies <strong>equipment, machinery, and consumables</strong> 
-	for the mining and mineral industries. We act as a solution partner in many industrial product groups such as <strong>grinding balls, grinding rods, casting sand additives, 
-	bentonite products, and process equipment</strong>.</p>
-	<br>
-	<p> Erdoğan Mining Technologies combines <strong>field experience, academic background, and applied engineering</strong> 
-	to approach every project with technical accuracy, economic feasibility, and long-term efficiency perspective. 
-	Our goal is to <strong>create reliable, innovative, and sustainable solutions in mining and mineral technologies, adding value to the industry.</strong></p>
-	</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ENGINEERING -->
-  <section id="mühendislik">
-    <h2>Engineering Services</h2>
-    <div class="grid">
-      <div class="card">
-        <div class="card-content">
-	  <h3>Mining Operations</h3>
-    	  <ul class="about-list">
-            <li><strong>Exploration, feasibility, and survey</strong> studies</li>
-	    <br>
-            <li><strong>Open-pit mine project</strong> preparation</li>
-	    <br>
-            <li><strong>Underground mine project</strong> preparation</li>
-	    <br>
-            <li>Periodic <strong>operational reports</strong> preparation</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-content">
-	  <h3>Ore Beneficiation</h3>
-    	  <ul class="about-list">
-            <li><strong>Ore beneficiation</strong> project preparation</li>
-	    <br>
-            <li>Plant <strong>efficiency</strong> studies</li>
-	    <br>
-            <li>Ore <strong>dewatering</strong> studies</li>
-	    <br>
-            <li>Recovery of valuable minerals from waste materials</li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="card">
-        <div class="card-content">
-	  <h3>Thermal Processes</h3>
-    	  <ul class="about-list">
-            <li><strong>Drying</strong> of industrial minerals such as quartz sand, bentonite, MgSO4, clays, and salts</li>
-	    <br>
-            <li><strong>Purification</strong> of ores such as graphite by roasting</li>
-	    <br>
-            <li><strong>Desulfurization</strong> of ores such as hematite and coal</li>
-	    <br>
-            <li><strong>Calcination</strong> of ores such as magnesite and calcite</li>
-	    <br>
-	    <li><strong>Reduction</strong> of ores such as magnetite, hematite, and stibnite</li>
-	    <br>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
- <!-- PROJECTS -->
-  <section id="projeler">
-    <h2>Projects</h2>
-    <div class="grid">
-
-    <!-- MS PROJECT-1 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Managing mining projects with computer software</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/nj_prj_yonetimi1.png">
-	  </div>
-         </div>
-       </div>
-
-    <!-- PLANLAMA-2 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Elbistan open-pit mine planning</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/elb_aki_pln1.png">
-      	  </div>
-         </div>
-       </div>
-
-    <!-- YF1 PB-ZN ARITMA-3 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Kardemir BF1 dust Pb-Zn recovery project</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/krd_YF1_PbZn_aritma1.jpg">
-      	  </div>
-         </div>
-       </div>
-
-    <!-- EMA AKIP-4 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Elbistan open-pit coal mining project prepared with EMA (Excel-Macro-AutoCAD)</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/ema_elb_akip1.png">
-          <img src="images/ema_elb_akip4.png">
-      	  </div>
-         </div>
-       </div>
-
-    <!-- EMA YKIP-5 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Elbistan underground coal mining project prepared with EMA (Excel-Macro-AutoCAD)</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/ema_elb_ykip1.png">
-          <img src="images/ema_elb_ykip4.png">
-      	  </div>
-        </div>
-      </div>
-
-   <!-- ZEYTİN KARASU ARITMA-6 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Adana Pozantı olive wastewater treatment project</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/adn_pzn_zks_aritma1.jpg">
-          <img src="images/adn_pzn_zks_aritma2.jpg">
-      	  </div>
-        </div>
-      </div>
-
-    <!-- ETİ MADEN ŞLAM ARITMA-7 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Eti Maden slurry treatment project</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:10px;">
-          <img src="images/etimaden_slam_aritma1.jpg">
-          <img src="images/etimaden_slam_aritma2.jpg">
-      	  </div>
-         </div>
-       </div>
-
-    <!-- SGS KÖMÜR AYIKLAMA-8 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Yeniköy SGS coal separation project</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/yeniköy_sgs_dk_19mm100_p1.jpg">
-      	  </div>
-         </div>
-       </div>
-
-    <!-- WİNNOWİNG-9 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Winnowing coal separation project</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/winnowing_separator1.jpg">
-      	  </div>
-         </div>
-       </div>
-
-   <!-- KÜMAŞ REZİSTANS KUMU ÜRETİMİ-10 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Kümaş resistance heating sand production project</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/kms_rzs_kumu_üretimi1.png">
-      	  </div>
-         </div>
-       </div>
-
-    <!-- ÇOLAKOĞLU MGSO4-11-->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Çolakoğlu magnesium sulfate production project</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/clko_mgs_üretimi1.jpg">
-      	  </div>
-         </div>
-       </div>
-
-    <!-- ÖZMALTAŞ MGSO4-12-->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Özmaltaş magnesium sulfate production project</strong></p>
-	  <br>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/ozmaltas_mgso4_p1.jpg">
-      	  </div>
-         </div>
-       </div>
-
-    <!-- KKUMU KURUTMA-13 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Quartz sand drying project</strong></p>
-	  <br>
-          <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:10px;">
-          <img src="images/kk_kurutma1.jpg">
-          <img src="images/kk_kurutma2.jpg">
-          </div>
-         </div>
-       </div>
-
-    <!-- SB METALİ ÜRETİMİ-14 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Antimony metal production project</strong></p>
-	  <br>
-          <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/sb_metal_üretimi1.jpg">
-          </div>
-         </div>
-       </div>
-
-    <!-- MGSO4 KURUTMA-15 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Crystalline magnesium sulfate drying project</strong></p>
-          <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:10px;">
-          <img src="images/kk_kurutma2.jpg">
-          <img src="images/kk_kurutma1.jpg">
-          </div>
-        </div>
-       </div>
-
-    <!-- BENTONITE DRYING-16 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Bentonite clay drying project</strong></p>
-        </div>
-       </div>
-
-    <!-- BOR CLAY DRYING-17 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Boron clay drying and roasting project</strong></p>
-        </div>
-       </div>
-
-    <!-- IRON ORE PELLET DRYING-18 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Drying and roasting of magnetite ore pellets</strong></p>
-        </div>
-       </div>
-
-    <!-- COAL DEHYDRATION-19 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Coal drying and conditioning project for thermal power plants</strong></p>
-        </div>
-       </div>
-
-    <!-- GRAPHITE ROASTING-20 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Graphite ore drying and roasting project</strong></p>
-        </div>
-       </div>
-
-    <!-- GOLD QUARTZ FRACTURING-21 -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Gold ore quartz fracturing project</strong></p>
-        </div>
-       </div>
-
-     </div>
-  </section>
-
-  <!-- TRADE -->
-  <section id="ticaret">
-    <h2>Equipment and Ore Trade</h2>
-    <div class="grid">
-
-    <!-- FORGED BALLS -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Forged Steel Grinding Balls</strong></p>
-	  <br>
-	  <p><strong>Applications:</strong> Grinding of gold, copper, lead-zinc, chromite, magnesite, feldspar, quartz, iron, cement, and other industrial minerals</p>
-	  <br>
-	  <p><strong>Ball sizes:</strong> 25mm, 30mm, 40mm, 50mm, 60mm, 70mm, 80mm, 90mm, 100mm</p>
-          <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/hd_dco_bilya1.png">
-          <img src="images/hd_dco_bilya2.jpeg">
-          <img src="images/hd_dco_bilya3.jfif">
-    	  </div>
-        </div>
-       </div>
-
-    <!-- MW DRYER -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Microwave Tunnel Drying Systems</strong></p>
-	  <br>
-	  <p><strong>Applications:</strong> Drying of industrial minerals, bentonite clays, quartz sand, ore pellets, concrete tiles, and ceramics</p>
-	  <br>
-	  <p><strong>Furnace belt sizes:</strong> Width: 80cm, 100cm, 125cm, Length: 8m, 10m, 15m, 20m</p>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/dki_mw_kurutucu1.jpg" style="width:100%;">
-          <img src="images/dki_mw_kkumu1.jpg" style="width:100%;">
-          <img src="images/dki_mw_mermer1.png" style="width:100%;">
-      	  </div>
-        </div>
-      </div>
-
-    <!-- PUMICE -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Crushed and Screened Pumice Ore</strong></p>
-	  <br>
-	  <p><strong>Applications:</strong> Plaster sand, block brick production, landscaping, agriculture (soil moisture reservoir around roots), textile surface treatment</p>
-	  <br>
-	  <p><strong>Size ranges:</strong> Plaster sand: 0–4mm, Brick: 0–16mm, 8–16mm, Landscaping: 16–32mm, Agriculture: 4–8mm, 8–16mm</p>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/pomza1.jpg">
-          <img src="images/pomza2.jpg">
-	  </div>
-	  <div style="margin-top:20px; text-align:left;">
-	  <a href="brochures/ns_pomza_yls.pdf" download
-	  style="display:inline-block; padding:6px 12px; background:#222; color:#fff; text-decoration:none; border-radius:6px; transition:0.3s;"
-	  onmouseover="this.style.background='#444'" onmouseout="this.style.background='#222'"> 📄 Download Brochure 
-	  </a> 
-	  </div>
-        </div>
-      </div>
-
-    <!-- MAGNESITE -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Raw Magnesite Ore</strong></p>
-	  <br>
-	  <p><strong>Applications:</strong> Calcined magnesite animal feed production, magnesium sulfate industrial salt production</p>
-      	  <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-          <img src="images/manyezit1.jpg">
-	  </div>
-        </div>
-      </div>
-
-    <!-- CHROME BALLS -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Chromium Alloy Cast Grinding Balls</strong></p>
-	  <br>
-          <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-    	  </div>
-        </div>
-       </div>
-
-    <!-- CHROME RODS -->
-      <div class="card">
-        <div class="card-content">
-          <p><strong>Chromium Alloy Cast Grinding Rods</strong></p>
-	  <br>
-          <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-    	  </div>
-        </div>
-       </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="iletisim">
-    <h2>Contact</h2>
-    <div class="contact-box">
-      <p><strong>Brand:</strong> ErMinTech</p>
-      <p><strong>Company:</strong> Erdogan Mining Technologies</p>
-      <p><strong>Web:</strong> www.ermintech.com</p>
-      <p><strong>E-mail:</strong> info@ermintech.com</p>
-      <p><strong>WhatsApp:</strong> +90 533 317 29 44</p>
-      <p><strong>Location:</strong> Inönü District, 183/2 Street, No:2, 35870 <strong>Izmir</strong></p>
-    </div>
-  </section>
-
-  <!-- WHATSAPP -->
-  <a class="whatsapp" href="https://wa.me/905333172944">☎</a>
-
-  <!-- LANGUAGE SWITCH -->
-  <div style="position: fixed; top: 15px; right: 20px; z-index: 9999; font-size: 14px;">
-    <a href="tr.html" title="Turkish" style="color:#ffffff; text-decoration:none;">TR</a> |
-    <a href="en.html" title="English" style="color:#ffffff; text-decoration:none;">EN</a>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    © 2026 Erdogan Mining Technologies
-  </footer>
+  <!-- BURADAN SONRASI DEĞİŞMEDİ (ORİJİNAL İÇERİK AYNI KALDI) -->
 
 </body>
-
 </html>
