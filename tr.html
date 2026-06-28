@@ -10,9 +10,9 @@
 
   <style>
 
-    * { margin: 0;
+   * { margin: 0;
       padding: 0;
-      box-sizing: border-box; }  
+      box-sizing: border-box; }
 
     html { scroll-behavior: smooth; }
 
@@ -25,9 +25,9 @@
 
     header {
       background:
-        linear-gradient(rgba(5, 15, 25, 0.10),
-                        rgba(5, 15, 25, 0.10)),
-        url("images/header1.jpg");
+      linear-gradient(rgba(5,15,25,0.10),
+                      rgba(5,15,25,0.10)),
+      url("images/header1.jpg");
 
       background-size: cover;
       background-position: center;
@@ -79,7 +79,7 @@
 
     nav a:hover {
       color: #00c8ff; }
-
+   
     /* GENERAL */
 
     section {
@@ -131,9 +131,14 @@
 
     .card h3 {
       color: #0f2d3f;
-      margin-bottom: 18px;
-      font-size: 22px; }
+      margin-bottom: 16px;
+      font-size: 16px; }
 
+	.card h4 {
+      color: #0f2d3f;
+      margin-bottom: 0px;
+      font-size: 16px; }
+	  
     /* LIST */
 
     .service-list {
@@ -146,7 +151,10 @@
     .service-list li:last-child {
       border-bottom: none; }
 
-    /* ABOUT / CONTACT */
+	  .about-list {
+    padding-left: 40px; }
+    
+	  /* ABOUT / CONTACT */
 
     .about-box,
     .contact-box {
@@ -202,7 +210,7 @@
       padding: 15px 20px;
       margin-top: 40px;
       font-size: 14px; }
-  
+
   </style>
 
   <meta charset="UTF-8">
@@ -221,13 +229,12 @@
    <p>
    Maden Mühendisliği
    &nbsp;&nbsp;•&nbsp;&nbsp;
-   Cevher Zenginleştirme
+   Cevher Zenginleşirme
    &nbsp;&nbsp;•&nbsp;&nbsp;
    Madencilik Ekipmanları
    &nbsp;&nbsp;•&nbsp;&nbsp;	
    Endüstriyel Mineraller
    </p>
-
    <a href="#iletisim" class="btn">Bize Ulaşın</a>
    </header>
 
@@ -236,9 +243,9 @@
      <a href="#hakkimizda">Hakkımızda</a>
      <a href="#mühendislik">Mühendislik</a>
      <a href="#projeler">Projeler</a>
-	 <a href="#atik">Maden Atığı Dönüşümü</a>
+     <a href="#gerikazanim">Mineral Geri Kazanımı</a>
+     <a href="#ekipman">Madencilik Ekipmanları</a>
      <a href="#mineral">Endüstriyel Mineraller</a>
-	 <a href="#ekipman">Madencilik Ekipmanları</a>
      <a href="#iletisim">İletişim</a>
   </nav>
 
@@ -250,84 +257,154 @@
 
     <div class="card">
     <div class="card-content">
-	<p> EMT Erdoğan Maden Teknolojileri; <strong>madencilik, cevher hazırlama ve mineral proses teknolojileri</strong> alanlarında mühendislik, proje geliştirme ve 
-	ticari çözüm hizmetleri sunan bir <strong>mühendislik ve danışmanlık</strong> şirketidir. Şirketimiz; endüstriyel mineraller, <strong>manyezit, dolomit, bentonit ve 
-	kuvars kumu</strong> başta olmak üzere farklı mineral grupları üzerine teknik bilgi, saha deneyimi ve proses odaklı yaklaşımı 
-	bir araya getirerek sektöre özel çözümler geliştirmektedir.</p>
-	<br>
-	<p>Faaliyet alanlarımız arasında <strong>kırma-eleme, öğütme, sınıflandırma, kurutma, mikrodalga destekli termal işlemler, 
-	mineral zenginleştirme ve proses optimizasyonu</strong> yer almaktadır. Özellikle enerji verimliliği yüksek <strong>mikrodalga kurutma ve 
-	termal işlem teknolojileri</strong> üzerine yürütülen çalışmalarımız; mineral işleme süreçlerinde daha kontrollü, sürdürülebilir ve 
-	yenilikçi uygulamaların geliştirilmesini hedeflemektedir.</p>
-	<br>
-	<p> Şirketimiz yalnızca mühendislik ve proje geliştirme hizmetleri sunmakla kalmayıp, aynı zamanda madencilik ve mineral sanayisine yönelik <strong>
-	ekipman, makine ve sarf malzeme tedariki</strong> de gerçekleştirmektedir. <strong>Öğütme bilyaları, öğütme çubukları, döküm kumu katkıları, 
-	bentonit ürünleri ve proses ekipmanları</strong> gibi birçok endüstriyel ürün grubunda çözüm ortağı olarak hizmet vermekteyiz.</p>
-	<br>
-	<p> Erdoğan Maden Teknolojileri; <strong>saha tecrübesi, akademik altyapı ve uygulama mühendisliğini</strong> bir araya getirerek 
-	her projeye teknik doğruluk, ekonomik uygulanabilirlik ve uzun vadeli verimlilik perspektifiyle yaklaşmaktadır. 
-	Amacımız; <strong>madencilik ve mineral teknolojileri alanında güvenilir, yenilikçi ve sürdürülebilir çözümler üreterek sektöre katma değer sağlamaktır.</strong></p>
-	</div>
+    <h4>EMT Erdoğan Maden Teknolojileri Firması;</h4>
+    <p>Maden işletmeciliği, cevher zenginleştirme ve mineral proses teknolojileri alanlarında 
+       mühendislik, proje geliştirme ve ticari çözüm hizmetleri sunan bir mühendislik ve danışmanlık şirketidir.</p>
+    <br>
+    <h4>Faaliyet Alanlarımız;</h4>
+      <ul class="about-list">
+      <li>Maden işletmeciliği mühendislik hizmetleri</li>
+      <li>Kırma, eleme, öğütme ve sınıflandırma sistemleri</li>
+      <li>Mineral zenginleştirme (manyetik ayırma, elektrostatik ayırma, liç vb.)</li>
+      <li>Susuzlaştırma ve kurutma prosesleri</li>
+      <li>Maden tesis atıklarının değerlendirilmesi</li>
+      <li>Mikrodalga destekli termal işlem teknolojileri</li>
+      <li>Proses tasarımı ve optimizasyonu</li>
+      </ul>
+    <br>
+    <p>Özellikle enerji verimliliği yüksek mikrodalga kurutma ve termal işlem teknolojileri üzerine yürüttüğümüz çalışmalar, 
+    mineral işleme süreçlerinde daha kontrollü, sürdürülebilir ve yenilikçi uygulamaların geliştirilmesini hedeflemektedir.</p>
+    <br>
+    <h4>Mineral Geri Kazanımı;</h4>
+    <p>Flotasyon, sallantılı masa, jig ve ağır ortam ayırma gibi yöntemlerle, cevher zenginleştirme tesisleri atıklarında bulunan
+    değerli minerallerin geri kazanımına yönelik çalışmalar yürütmekteyiz. Ayrıştırma işlemleri sonrasında geride kalan 
+    kil ve ince fraksiyonlar ise yeniden değerlendirilerek seramik ve refrakter sektörleri için ikincil hammadde haline getirilmektedir.</p>
+    <br>
+    <h4>Madencilik Ekipman Tedariği;</h4>
+    <p>Madencilik sanayisine yönelik ekipman, makine ve sarf malzeme tedariki de gerçekleştirmekteyiz. Öğütme bilyaları, 
+    öğütme çubukları ve proses ekipmanları gibi birçok endüstriyel ürün grubunda güvenilir çözüm ortağı olarak hizmet vermekteyiz.</p>
+    <br>
+    <h4>Endüstriyel Mineraller;</h4>
+    <p>Manyezit, dolomit, bentonit ve kuvars kumu başta olmak üzere farklı mineral gruplarında teknik bilgi ve saha deneyimini 
+    proses mühendisliği ile birleştirerek sektöre özel çözümler geliştirmekteyiz.</p>
+    <br>
+    <h4>Yaklaşımımız;</h4>
+    <p>Her projeye saha tecrübesi, akademik bilgi birikimi ve uygulama mühendisliğini bir araya getirerek; teknik doğruluk, 
+    ekonomik uygulanabilirlik ve sürdürülebilirlik perspektifiyle yaklaşmaktayız.</p>
+    <br>
+    <h4>Amacımız;</h4>
+    <p>Madencilik ve mineral teknolojileri alanında yenilikçi, güvenilir ve uygulanabilir çözümler geliştirerek sektörümüze katma değer sağlamaktır.</p>
+    <br>
+    </div>
     </div>
 
-    </div>
+  </div>
 </section>
+
 
 <!-- MÜHENDİSLİK -->
   <section id="mühendislik">
     <h2>Mühendislik Hizmetleri</h2>
     <div class="grid">
 
+    <!-- MADEN ARAMA / 1 -->
     <div class="card">
     <div class="card-content">
-    <h3>Maden İşletme</h3>
-    <ul class="about-list">
-    <li>Maden <strong>arama, fizibilite ve etüt</strong> çalışmaları</li>
+    <p><strong>Maden Arama Fizibilite ve Etüt Çalışmaları</strong></p>
     <br>
-    <li><strong>Açık işletme projesi</strong> hazırlama</li>
-    <br>
-    <li><strong>Yeraltı işletme projesi</strong> hazırlama</li>
-    <br>
-    <li>Dönem <strong>faaliyet raporları</strong> hazırlama</li>
-    </ul>
     </div>
     </div>
 
+    <!-- MI PROJESİ / 2 -->
     <div class="card">
     <div class="card-content">
-    <h3>Cevher Zenginleştirme</h3>
-    <ul class="about-list">
-    <li>Cevher <strong>zenginleştirme</strong> projesi hazırlama</li>
+    <p><strong>Açık ve Yeraltı Maden İşletme Projeleri</strong></p>
     <br>
-    <li>Tesis <strong>verimlilik</strong> çalışmaları</li>
-    <br>
-    <li>Cevher <strong>susuzlaştırma</strong> çalışmaları</li>
-    <br>
-    <li>Atık içindeki değerli minerallerin <strong>geri kazanımı</strong> çalışmaları</li>
-    </ul>
     </div>
     </div>
 
+    <!-- DF RAPOR/ 3 -->
     <div class="card">
     <div class="card-content">
-    <h3>Termal İşlemler</h3>
-    <ul class="about-list">
-    <li>Kuvars kumu, bentonit ve MgSO4 gibi endüstriyel mineraller, killer ve tuzların <strong>kurutulması</strong></li>
+    <p><strong>Dönem Faaliyet Raporları</strong></p>
     <br>
-    <li>Kavurma yöntemiyle grafit gibi cevherlerin <strong>saflaştırılması</strong></li>
-    <br>
-    <li>Hematit ve kömür gibi cevherlerdeki <strong>kükürt giderimi</strong></li>
-    <br>
-    <li>Manyezit ve kalsit gibi cevherlerin <strong>kalsinasyonu</strong></li>
-    <br>
-    <li>Manyetit, hematit ve antimonit gibi cevherlerin <strong>redüksiyonu (indirgenmesi)</strong></li>
-    <br>
-    </ul>
     </div>
     </div>
 
+    <!-- CZ PROJESİ / 4 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Cevher Zenginleştirme Projeleri</strong></p>
+    <br>
     </div>
-  </section>
+    </div>
+
+    <!-- VERİMLİLİK / 5 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Tesis Verimlilik ve Performans Analizleri</strong></p>
+    <br>
+    </div>
+    </div>
+
+    <!-- GERİ KAZANIM / 6 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Tesis Atıklarından Değerli Minerallerin Geri Kazanımı</strong></p>
+    <br>
+    </div>
+    </div>
+
+    <!-- KURUTMA / 7 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Kuvars kumu, bentonit ve MgSO4 gibi endüstriyel mineraller, killer ve tuzların kurutulması çalışmaları</strong></p>
+    <br>
+    </div>
+    </div>
+
+    <!-- KAVURMA / 8 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Kavurma yöntemiyle grafit gibi cevherlerin saflaştırılması çalışmaları</strong></p>
+    <br>
+    </div>
+    </div>
+
+    <!-- KÜKÜRT GİDERİMİ / 9 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Hematit ve kömür gibi cevherlerdeki kükürt giderimi çalışmaları</strong></p>
+    <br>
+    </div>
+    </div>
+
+    <!-- KALSİNASYON / 10 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Manyezit ve kalsit gibi cevherlerin kalsinasyonu çalışmaları</strong></p>
+    <br>
+    </div>
+    </div>
+
+    <!-- REDÜKSİYON / 11 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Manyetit, hematit ve antimonit gibi cevherlerin redüksiyonu (indirgenmesi) çalışmaları</strong></p>
+    <br>
+    </div>
+    </div>
+
+    <!-- XXX / 12 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong> </strong></p>
+    <br>
+    </div>
+    </div>
+
+   </div>
+ </section>
 
 
 <!-- PROJELER -->
@@ -335,7 +412,7 @@
     <h2>Projeler</h2>
     <div class="grid">
 
-    <!-- MS PROJECT-1 -->
+    <!-- MS PROJECT / 1 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Bilgisayar programları ile maden işletme projesinin yönetilmesi</strong></p>
@@ -346,7 +423,7 @@
     </div>
     </div>
 
-    <!-- PLANLAMA-2 -->
+    <!-- PLANLAMA / 2 --> 
     <div class="card">
     <div class="card-content">
     <p><strong>Açık ocak maden planlaması</strong></p>
@@ -357,7 +434,7 @@
     </div>
     </div>
 
-    <!-- YF1 PB-ZN ARITMA-3 -->
+    <!-- YF1 PB-ZN ARITMA / 3 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Yüksek fırın baca tozu Pb-Zn arıtma projesi</strong></p>
@@ -368,7 +445,7 @@
     </div>
     </div>
 
-    <!-- EMA AKIP-4 -->
+    <!-- EMA AKIP / 4 -->
     <div class="card">
     <div class="card-content">
     <p><strong>EMA (Excel-Makro-AutoCAD) yöntemiyle hazırlanan açık ocak kömür işletme projesi</strong></p>
@@ -380,7 +457,7 @@
     </div>
     </div>
 
-    <!-- EMA YKIP-5 -->
+    <!-- EMA YKIP / 5 -->
     <div class="card">
     <div class="card-content">
     <p><strong>EMA (Excel-Makro-AutoCAD) yöntemiyle hazırlanan yeraltı kömür işletme projesi</strong></p>
@@ -392,7 +469,7 @@
     </div>
     </div>
 
-    <!-- ZEYTİN KARASU ARITMA-6 -->
+    <!-- ZEYTİN KARASU ARITMA / 6 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Pozantı zeytin karasu arıtma projesi</strong></p>
@@ -405,7 +482,7 @@
     </div>
     </div>
 
-    <!-- ETİ MADEN ŞLAM ARITMA-7 -->
+    <!-- ETİ MADEN ŞLAM ARITMA / 7 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Maden şlamı arıtma projesi</strong></p>
@@ -417,7 +494,7 @@
     </div>
     </div>
 
-    <!-- SGS KÖMÜR AYIKLAMA-8 -->
+    <!-- SGS KÖMÜR AYIKLAMA / 8 -->
     <div class="card">
     <div class="card-content">
     <p><strong>SGS kömür ayıklama projesi</strong></p>
@@ -428,7 +505,7 @@
     </div>
     </div>
 
-    <!-- WİNNOWİNG-9 -->
+    <!-- WİNNOWİNG / 9 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Winnowing kömür ayıklama projesi</strong></p>
@@ -439,7 +516,7 @@
     </div>
     </div>
 
-    <!-- KÜMAŞ REZİSTAN KUMU ÜRETİMİ-10 -->
+    <!-- KÜMAŞ REZİSTAN KUMU ÜRETİMİ / 10 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Kümaş rezistans ısıtıcı kumu üretimi projesi</strong></p>
@@ -450,7 +527,7 @@
     </div>
     </div>
 
-    <!-- ÇOLAKOĞLU MGSO4-11-->
+    <!-- ÇOLAKOĞLU MGSO4 / 11-->
     <div class="card">
     <div class="card-content">
     <p><strong>Çolakoğlu magnezyum sülfat üretimi projesi</strong></p>
@@ -461,7 +538,7 @@
     </div>
     </div>
 
-    <!-- ÖZMALTAŞ MGSO4-12-->
+    <!-- ÖZMALTAŞ MGSO4 / 12-->
     <div class="card">
     <div class="card-content">
     <p><strong>Özmaltaş magnezyum sülfat üretimi projesi</strong></p>
@@ -472,7 +549,7 @@
     </div>
     </div>
 
-    <!-- KKUMU KURUTMA-13 -->
+    <!-- KKUMU KURUTMA / 13 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Kuvars kumu kurutma projesi</strong></p>
@@ -484,7 +561,7 @@
     </div>
     </div>
 
-    <!-- SB METALİ ÜRETİMİ-14 -->
+    <!-- SB METALİ ÜRETİMİ / 14 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Antimon metal üretimi projesi</strong></p>
@@ -495,7 +572,7 @@
     </div>
     </div>
 
-    <!-- MGSO4 KURUTMA-15 -->
+    <!-- MGSO4 KURUTMA / 15 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Kristal magnezyum sülfat kurutma projesi</strong></p>
@@ -506,42 +583,42 @@
     </div>
     </div>
 
-    <!-- BENTONİT KURUTMA-16 -->
+    <!-- BENTONİT KURUTMA / 16 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Bentonit kili kurutma projesi</strong></p>
     </div>
     </div>
 
-    <!-- BOR KİLİ KURUTMA-17 -->
+    <!-- BOR KİLİ KURUTMA / 17 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Bor kili kurutma ve kavurma projesi</strong></p>
     </div>
     </div>
 
-    <!-- CEVHER PELET KURUTMA-18 -->
+    <!-- CEVHER PELET KURUTMA / 18 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Manyetit cevher peletlerini kurutma ve kavurma projesi</strong></p>
     </div>
     </div>
 
-    <!-- KÖMÜR GEVRETME-19 -->
+    <!-- KÖMÜR GEVRETME / 19 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Termik santrallar için kömür cevheri kurutma ve gevretme projesi</strong></p>
     </div>
     </div>
 
-    <!-- GRAFİT KAVURMA-20 -->
+    <!-- GRAFİT KAVURMA / 20 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Grafit cevheri kurutma ve kavurma projesi</strong></p>
     </div>
     </div>
 
-    <!-- ALTIN KUVARS ÇATLATMA-21 -->
+    <!-- ALTIN KUVARS ÇATLATMA / 21 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Altın cevheri kuvars çatlatma projesi</strong></p>
@@ -551,145 +628,128 @@
     </div>
   </section>
 
-	
-<!-- MADEN ATIĞI DÖNÜŞÜMÜ -->
-  <section id="atik">
-    <h2>Maden Atığı Dönüşümü</h2>
+
+<!-- MİNERAL GERİ KAZANIMI -->
+  <section id="gerikazanim">
+    <h2>Mineral Geri Kazanımı</h2>
     <div class="grid">
 
-   	<!-- KROMİT -->
+    <!-- KROMİT ATIĞI -->
     <div class="card">
     <div class="card-content">
-    <p><strong>Kromit Tesis Atıklarının Değerlendirilmesi</strong></p>
-	<br>
-	<div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-    <img src="images/pomza??.jpg">
-    </div>
+    <p><strong>Kromit Flotasyon Atıklarından Değerli Mineral Geri Kazanımı</strong></p>
+    <br>
     </div>
     </div>
 
-    <!-- MANYEZİT -->
+    <!-- MANYEZİT ATIĞI -->
     <div class="card">
     <div class="card-content">
-    <p><strong>Manyezit Tesis Atıklarının Değerlendirilmesi</strong></p>
-	<br>
+    <p><strong>Manyezit Tesis Atıklarından Değerli Mineral Geri Kazanımı</strong></p>
+    <br>
+    </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- MADENCİLİK EKİPMANLARI -->
+  <section id="ekipman">
+    <h2>Madencilik Ekipmanları</h2>
+    <div class="grid">
+
+    <!-- MW_KURUTUCU-1 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Mikrodalga Tünel Kurutma Sistemleri</strong></p>
+    <br>
+    <p><strong>Kullanım Alanları:</strong> Endüstriyel mineraller, bentonit killer, kuvars kumu, 
+    cevher peletleri, beton karo ve seramiklerin kurutulması</p>
+    <br>
+    <p><strong>Fırın Bant Boyutları;</strong> Eni: 80cm, 100cm, 125cm, Boyu: 8m, 10m, 15m, 20m</p>
     <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-    <img src="images/manyezit??.jpg">
-	</div>
-	</div>
+    <img src="images/dki_mw_kurutucu1.jpg" style="width:100%;">
+    <img src="images/dki_mw_kkumu1.jpg" style="width:100%;">
+    <img src="images/dki_mw_mermer1.png" style="width:100%;">
+    </div>
+    </div>
     </div>
 
+    <!-- DÖVME BİLYA-2 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Dövme Çelik Öğütme Bilyaları</strong></p>
+    <br>
+    <p><strong>Kullanım alanları:</strong> Altın, bakır, kurşun-çinko, kromit, manyezit, 
+    feldspat, kuvars, demir, çimento ve diğer endüstriyel minerallerin öğütülmesi</p>
+    <br>
+    <p><strong>Bilya çapları:</strong> 25mm, 30mm, 40mm, 50mm, 60mm, 70mm, 80mm, 90mm, 100mm </p>
+    <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
+    <img src="images/hd_dco_bilya1.png">
+    <img src="images/hd_dco_bilya2.jpeg">
+    <img src="images/hd_dco_bilya3.jfif">
     </div>
-  </section>
+    </div>
+    </div>
+
+  </div>
+</section>
 
 
-  <!-- Endüstriyel Mineraller -->
+<!-- ENDÜSTRİYEL MİNERALLER -->
   <section id="mineral">
     <h2>Endüstriyel Mineraller</h2>
     <div class="grid">
 
-    	<!-- POMZA-1 -->
-      	<div class="card">
-        <div class="card-content">
-        <p><strong>Kırılmış Elenmiş Pomza Cevheri</strong></p>
-	<br>
-	<p><strong>Kullanım Alanları:</strong> Sıva kumu, blok tuğla üretimi, peyzaj düzenlemeleri, 
-	tarım sektörü (ağaç kök bölgesinde su rezervuarı oluşturma), tekstik sektörü (kumaş taşlama)</p>
-	<br>
-	<p><strong>Cevher Boyutları;</strong> Sıva Kumu: 0-4mm, Briket: 0-16mm, 8-16mm, Peyzaj: 16-32mm, Tarım: 4-8mm, 8-16mm</p>
-      	<div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-        <img src="images/pomza1.jpg">
-        <img src="images/pomza2.jpg">
-    	</div>
-        </div>
-      	</div>
+    <!-- POMZA-1 -->
+    <div class="card">
+    <div class="card-content">
+    <p><strong>Kırılmış Elenmiş Pomza Cevheri</strong></p>
+    <br>
+    <p><strong>Kullanım Alanları:</strong> Sıva kumu, blok tuğla üretimi, peyzaj düzenlemeleri, 
+    tarım sektörü (ağaç kök bölgesinde su rezervuarı oluşturma), tekstik sektörü (kumaş taşlama)</p>
+    <br>
+    <p><strong>Cevher Boyutları;</strong> Sıva Kumu: 0-4mm, Briket: 0-16mm, 8-16mm, Peyzaj: 16-32mm, Tarım: 4-8mm, 8-16mm</p>
+    <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
+    <img src="images/pomza1.jpg">
+    <img src="images/pomza2.jpg">
+    </div>
+    </div>
+    </div>
 
     <!-- MANYEZİT-2 -->
     <div class="card">
     <div class="card-content">
     <p><strong>Ham Manyezit Cevheri</strong></p>
-	<br>
-	<p><strong>Kullanım Alanları:</strong> Kalsine manyezit hayvan yemi üretimi, magnezyum sülfat sanayi tuzu üretimi</p>
-	<br>
-	<p><strong>Cevher Özellikleri:</strong>  </p>
-	<br>
-	<p><strong>Cevher Boyutları:</strong>  </p>
+    <br>
+    <p><strong>Kullanım Alanları:</strong> Kalsine manyezit hayvan yemi üretimi, magnezyum sülfat sanayi tuzu üretimi</p>
+    <br>
+    <p><strong>Cevher Özellikleri:</strong>  </p>
+    <br>
+    <p><strong>Cevher Boyutları:</strong>  </p>
     <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
     <img src="images/manyezit1.jpg">
-	</div>
-	</div>
+    </div>
+    </div>
     </div>
 
-    </div>
-  </section>
+  </div>
+</section>
 
 
-		
-  <!-- Madencilik Ekipmanları -->
-  <section id="ekipman">
-    <h2>Madencilik Ekipmanları</h2>
-    <div class="grid">
-
-     	<!-- MW_KURUTUCU-1 -->
-      	<div class="card">
-        <div class="card-content">
-        <p><strong>Mikrodalga Tünel Kurutma Sistemleri</strong></p>
-	<br>
-	<p><strong>Kullanım Alanları:</strong> Endüstriyel mineraller, bentonit killer, kuvars kumu, 
-	cevher peletleri, beton karo ve seramiklerin kurutulması</p>
-	<br>
-	<p><strong>Fırın Bant Boyutları;</strong> Eni: 80cm, 100cm, 125cm, Boyu: 8m, 10m, 15m, 20m</p>
-      	<div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-        <img src="images/dki_mw_kurutucu1.jpg" style="width:100%;">
-        <img src="images/dki_mw_kkumu1.jpg" style="width:100%;">
-        <img src="images/dki_mw_mermer1.png" style="width:100%;">
-    	</div>
-        </div>
-      	</div>
-
-    	<!-- DÖVME BİLYA-2 -->
-      	<div class="card">
-        <div class="card-content">
-        <p><strong>Dövme Çelik Öğütme Bilyaları</strong></p>
-	<br>
-	<p><strong>Kullanım alanları:</strong> Altın, bakır, kurşun-çinko, kromit, manyezit, 
-	feldspat, kuvars, demir, çimento ve diğer endüstriyel minerallerin öğütülmesi</p>
-	<br>
-	<p><strong>Bilya çapları:</strong> 25mm, 30mm, 40mm, 50mm, 60mm, 70mm, 80mm, 90mm, 100mm </p>
-        <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-        <img src="images/hd_dco_bilya1.png">
-        <img src="images/hd_dco_bilya2.jpeg">
-        <img src="images/hd_dco_bilya3.jfif">
-    	</div>
-        </div>
-       	</div>
-
-    	<!-- KROMLU BİLYA-3 -->
-      	<div class="card">
-        <div class="card-content">
-        <p><strong>Krom Alaşımlı Dökme Öğütme Bilyaları</strong></p>
-	<br>
-        <div style="display:grid; grid-template-columns:repeat(1,1fr); gap:10px;">
-    	</div>
-        </div>
-      	</div>
-
-    </div>
-  </section>
-
-	
-  <!-- İLETİŞİM -->
+<!-- İLETİŞİM -->
   <section id="iletisim">
     <h2>İletişim</h2>
     <div class="contact-box">
-      <p><strong>Marka:</strong> EMT MADEN</p>
-      <p><strong>Şirket:</strong> EMT Erdoğan Maden Teknolojileri
-      <p><strong>Web:</strong> www.ermintech.com</p>
-      <p><strong>E-posta:</strong> info@ermintech.com</p>
-      <p><strong>WhatsApp:</strong> +90 533 317 29 44</p>
-      <p><strong>Lokasyon:</strong> İnönü Mah., 183/2 Sokak, No:2, 35870 <strong>İzmir</strong>
-    </div>
-  </section>
+    <p><strong>Marka:</strong> EMT MADEN</p>
+    <p><strong>Şirket:</strong> EMT Erdoğan Maden Teknolojileri
+    <p><strong>Web:</strong> www.ermintech.com</p>
+    <p><strong>E-posta:</strong> info@ermintech.com</p>
+    <p><strong>WhatsApp:</strong> +90 533 317 29 44</p>
+    <p><strong>Lokasyon:</strong> İnönü Mah., 183/2 Sokak, No:2, 35870 <strong>İzmir</strong>
+  </div>
+</section>
 
   <!-- WHATSAPP -->
   <a class="whatsapp" href="https://wa.me/905333172944">☎</a>
